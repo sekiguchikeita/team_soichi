@@ -13,7 +13,6 @@ function db_conn(){
         $db_name = "gs_db";    //データベース名
         $db_id   = "root";      //アカウント名
         $db_pw   = "root";  
-        //$db_host = "mysql1026.db.sakura.ne.jp";
         $db_host = "localhost"; //DBホスト
         $pdo = new PDO('mysql:dbname='.$db_name.';charset=utf8;host='.$db_host, $db_id, $db_pw);
         return $pdo; // make it global, otherwise you cannot use it where you call it 
